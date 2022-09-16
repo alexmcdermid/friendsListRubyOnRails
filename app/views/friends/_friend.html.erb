@@ -7,6 +7,8 @@
     <td><%= friend.phone %></td>
     <td><%= friend.twitter %></td>
     <td><%= link_to "View", friend %></td>
+    <td><%= link_to "Edit", edit_friend_path(friend) %></td>
+    <td><%= link_to "Remove", @friend, method: :delete %></td>
   </tr>
 </tbody>
 
